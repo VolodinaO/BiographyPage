@@ -1,0 +1,105 @@
+.body{
+    margin: 0%;
+    background-image: url("background.jpg");
+}
+.top-block{
+    display: block;
+    align-content: center;
+    padding: 10px;
+}
+.image-block{
+    display: inline-block;
+    width: 10%;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.image-block:hover {
+    opacity: 0.8;
+}
+.about-block{
+    background-color: #f1f1f1;
+    border-radius: 1%;
+    padding: 10px;
+    left: 25%;
+    display: inline-block;
+    width: 70%;
+    color: midnightblue;
+    font-family: Consolas, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.bottom-block{
+    padding: 20px;
+    text-align: start;
+    font-family: Consolas, sans-serif;
+    color: black;
+}
+.table{
+    display: table;
+    margin: auto;
+    width: 95%;
+    background-color: #e5e4e5;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.white{
+    background-color: #f1f1f1;
+    color: blue;
+}
+.caption{
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 28px;
+    color: darkblue;
+}
+/*Модальное окно с аватаром*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

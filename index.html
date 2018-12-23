@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+<div class="top-block">
+    <img src="avatar.jpg" class="image-block" id="myAvatar">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <div class="about-block">
+        <p>
+            Здравствуйте, меня зовут Володина Ольга!
+        </p>
+        <p>
+            Я - выпукница факультета информатики Самарского универтитета, окончившая специальность "Проектирование архитектур и разработка корпоративных приложений" со званием магистра.
+        </p>
+        <p>
+            Предметом моей гордости является мое участие в разработке группового проекта и его защите на английском языке на международном хакатоне Junction 2017, проходящем в Финляндии.
+        </p>
+    </div>
+</div>
+<div class="bottom-block">
+    <table class="table">
+        <caption class="caption">
+            <b>- Мои навыки и умения -
+            </b>
+        </caption>
+        <tr>
+            <td>
+                <b>Навык</b>
+            </td>
+            <td>
+                <b>Уровень валадения</b>
+            </td>
+        </tr>
+        <tr class="white">
+            <td>HTML/CSS/JS</td>
+            <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td>JavaSE/JavaEE</td>
+            <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="white">
+            <td>SQL/Oracle/PostgreSQL/MySQL/NoSQL</td>
+            <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td>C/C++</td>
+            <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="white">
+            <td>Android</td>
+            <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="white">
+            <td>Azure/Amazon/Google Cloud</td>
+            <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td>Unix/Linux</td>
+            <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="white">
+            <td>Английский язык</td>
+            <td>B1</td>
+        </tr>
+    </table>
+</div>
+</body>
+<script>
+    var modal = document.getElementById('myModal');
+
+    var img = document.getElementById('myAvatar');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+</script>
+</html>
